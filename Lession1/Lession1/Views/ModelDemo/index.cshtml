@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "bai3";
+
+}
+
+<h2>Welcome</h2>
+<!DOCTYPE html>
+<html>
+<body>
+
+    @{ var users = Model as List<Lession1.Models.User>;
+    }
+    @foreach( var p in users)
+    {
+        @p.name
+    }
+
+</body>
+</html>

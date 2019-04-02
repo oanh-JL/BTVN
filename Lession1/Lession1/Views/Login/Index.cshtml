@@ -1,0 +1,25 @@
+﻿@model Lession1.Models.User
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>User form</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div>@Html.LabelFor(Model => Model.name)</div>
+    <div>
+        @Html.EditorFor(Model => Model.name)
+        @Html.ValidationMessageFor(Model => Model.name)
+    </div>
+    <div>@Html.LabelFor(Model => Model.address)</div>
+
+    <div>@Html.EditorFor(Model => Model.address)
+    @Html.ValidationMessageFor(Model => Model.address)
+    </div>
+    <div>@Html.LabelFor(Model => Model.email)</div>
+    <div>@Html.EditorFor(Model => Model.email)
+    @Html.ValidationMessageFor(Model => Model.email)
+    </div>
+    <p><input type="submit" value="Create"/></p>
+}
