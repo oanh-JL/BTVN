@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EShopV11</title>
+    <!-- Latest compiled and minified CSS -->
+    
+    @Styles.Render("~/Content/css")
+    <!-- jQuery library -->
+    
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Latest compiled JavaScript -->
+    
+    @Scripts.Render("~/bundles/bootstrap")
+    <style>
+        .header {
+            margin-bottom: 0;
+        }
+
+        .menu > ul, .navigator > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            font-size: 30px;
+            color: #790A0A;
+            padding: 10px;
+            line-height: 50px;
+        }
+
+        .navigator {
+            background-color: #CADAFA;
+            height: 50px;
+        }
+
+            .navigator li {
+                display: inline-block;
+            }
+
+            .navigator a:hover {
+                background-color: #8092C1;
+                color: #898E41;
+            }
+
+        .menu {
+            background-color: #C4ECCE;
+            padding: 0;
+        }
+
+            .menu a {
+                text-decoration: none;
+                font-size: 20px;
+                color: #555E92;
+                padding: 10px;
+                display: block;
+            }
+
+                .menu a:hover {
+                    background-color: #8092C1;
+                    color: #898E41;
+                    display: block;
+                }
+
+        .content {
+            background-color: #C4ECCE;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .main {
+            background-color: white;
+        }
+
+        .footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="boundary">
+        <div class="header jumbotron text-center"><h1>Header</h1></div>
+        <div class="navigator">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Download</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="menu col-lg-3 col-md-4">
+                <ul>
+                    <li><a href="">First</a></li>
+                    <li><a href="">Second</a></li>
+                    <li><a href="">Third</a></li>
+                    <li><a href="">Fourth</a></li>
+                    <li><a href="">Fifth</a></li>
+                </ul>
+            </div>
+            <div class="main col-lg-9 col-md-8">
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel panel-default col-lg-3">
+                    <div class="panel-heading"></div>
+                    <div class="panel-content"><img src="images/laptop.png" alt=""></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer jumbotron text-center"><h1>Footer</h1></div>
+    </div>
+</body>
+</html>
+

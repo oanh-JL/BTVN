@@ -73,8 +73,11 @@ D:\ASP.net\Lession1\Lession1\bin\Antlr3.Runtime.pdb
 D:\ASP.net\Lession1\Lession1\bin\System.Diagnostics.DiagnosticSource.xml
 D:\ASP.net\Lession1\Lession1\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\ASP.net\Lession1\Lession1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\ASP.net\Lession1\Lession1\obj\Debug\Lession1.csprojAssemblyReference.cache
 D:\ASP.net\Lession1\Lession1\obj\Debug\Lession1.csproj.CoreCompileInputs.cache
 D:\ASP.net\Lession1\Lession1\obj\Debug\Lession1.csproj.CopyComplete
 D:\ASP.net\Lession1\Lession1\obj\Debug\Lession1.dll
 D:\ASP.net\Lession1\Lession1\obj\Debug\Lession1.pdb
+D:\ASP.net\Lession1\Lession1\bin\EntityFramework.dll
+D:\ASP.net\Lession1\Lession1\bin\EntityFramework.SqlServer.dll
+D:\ASP.net\Lession1\Lession1\bin\EntityFramework.xml
+D:\ASP.net\Lession1\Lession1\bin\EntityFramework.SqlServer.xml

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "_NewLayout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EShopV11</title>
+    <!-- Latest compiled and minified CSS -->
+
+    @Styles.Render("~/Content/css")
+    <!-- jQuery library -->
+
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Latest compiled JavaScript -->
+
+    @Scripts.Render("~/bundles/bootstrap")
+     
+    @Styles.Render("~/Content/newcss")
+</head>
+<body>
+    <div class="boundary">
+        <div class="header jumbotron text-center">
+            @RenderPage("_Header.cshtml")
+        </div>
+        <div class="navigator">
+             @Html.Action("LoadNav","Layout")
+        </div>
+        <div class="content">
+            <div class="menu col-lg-3 col-md-4">
+            @Html.Action("CategoryLayout","Layout")
+            </div>
+            <div class="main col-lg-9 col-md-8">
+              @RenderBody()
+            </div>
+        </div>
+        <div class="footer jumbotron text-center">
+           @RenderPage("_Footer.cshtml")
+        </div>
+    </div>
+</body>
+</html>
+

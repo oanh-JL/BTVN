@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Lession1.Models.entities.Category>
+
+<ul>
+    @foreach (var m in Model)
+    {
+        <li><a href="/Layout/ShowProduct/@m.Id">@m.Name</a></li>
+    }
+</ul>
+

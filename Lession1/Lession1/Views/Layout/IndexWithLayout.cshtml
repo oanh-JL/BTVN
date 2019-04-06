@@ -1,0 +1,17 @@
+﻿
+@{
+                /**/
+
+                ViewBag.Title = "IndexWithLayout";
+                Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+@model IEnumerable<Lession1.Models.entities.Product>
+@foreach (var p in Model)
+{
+    <div class="panel panel-default col-lg-3">
+        <div class="panel-heading">@p.Name</div>
+        <div class="panel-content"><img src="~/images/laptop.png" alt=""></div>
+        <div class="panel-footer">@p.UnitPrice</div>
+    </div>
+
+}

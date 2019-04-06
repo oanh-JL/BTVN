@@ -134,10 +134,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CatagoryController.cs" />
+    <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
     <Compile Include="Controllers\ModelDemoController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SinhMaController.cs" />
     <Compile Include="Controllers\WelcomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -146,6 +150,7 @@
     <Compile Include="Models\entities\Category.cs" />
     <Compile Include="Models\entities\Customer.cs" />
     <Compile Include="Models\entities\DBContext.cs" />
+    <Compile Include="Models\entities\Menu.cs" />
     <Compile Include="Models\entities\Order.cs" />
     <Compile Include="Models\entities\OrderDetail.cs" />
     <Compile Include="Models\entities\Product.cs" />
@@ -158,10 +163,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\newstyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\iphone.png" />
+    <Content Include="images\laptop.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -198,6 +206,25 @@
     <Content Include="Views\SinhMa\View.cshtml" />
     <Content Include="Views\SinhMa\Index.cshtml" />
     <Content Include="Views\SinhMa\Edit.cshtml" />
+    <Content Include="Views\Catagory\Index.cshtml" />
+    <Content Include="Views\Catagory\Create.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Product\Delete.cshtml" />
+    <Content Include="Views\Layout\Index.cshtml" />
+    <Content Include="Views\Shared\_NewLayout.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Layout\LoadNav.cshtml" />
+    <Content Include="Views\Layout\IndexWithLayout.cshtml" />
+    <Content Include="Views\Layout\CategoryLayout.cshtml" />
+    <Content Include="Views\Layout\ShowProduct.cshtml" />
+    <Content Include="Views\Menus\Create.cshtml" />
+    <Content Include="Views\Menus\Delete.cshtml" />
+    <Content Include="Views\Menus\Details.cshtml" />
+    <Content Include="Views\Menus\Edit.cshtml" />
+    <Content Include="Views\Menus\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -214,6 +241,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
